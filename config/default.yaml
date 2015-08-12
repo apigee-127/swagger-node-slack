@@ -5,5 +5,6 @@ swagger:
   mapErrorsToJson: true
   docEndpoints:
     raw: /swagger
+  validateResponse: false
 
 # any other values in this file are just loaded into the config for application access...

@@ -58,15 +58,11 @@ paths:
       consumes:
         - application/x-www-form-urlencoded
       parameters:
-        - $ref: "#/parameters/token"
-        - $ref: "#/parameters/command"
         - $ref: "#/parameters/text"
-        - $ref: "#/parameters/team_id"
-        - $ref: "#/parameters/team_domain"
-        - $ref: "#/parameters/channel_id"
-        - $ref: "#/parameters/channel_name"
-        - $ref: "#/parameters/user_id"
         - $ref: "#/parameters/user_name"
+        - $ref: "#/parameters/icon_url"
+        - $ref: "#/parameters/icon_emoji"
+        - $ref: "#/parameters/channel"
       responses:
         "200":
           description: Success
@@ -86,7 +82,7 @@ parameters:
     name: command
     in: formData
     description: What command to trigger?
-    required: true
+    required: false
     type: string
   text:
     name: text
@@ -128,7 +124,25 @@ parameters:
     name: user_name
     in: formData
     description: Friendly handle of the user
-    required: true
+    required: false
+    type: string
+  icon_url:
+    name: icon_url
+    in: formData
+    description: Override the bot icon
+    required: false
+    type: string
+  icon_emoji:
+    name: icon_emoji
+    in: formData
+    description: Override the bot icon
+    required: false
+    type: string
+  channel:
+    name: channel
+    in: formData
+    description: Override the bot icon
+    required: false
     type: string
 definitions:
   Message:
