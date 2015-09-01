@@ -21,7 +21,7 @@ function ticker(req, res) {
     googleStocks.get([symbol], function(error, data) {
         console.log(symbol+": "+data[0].l);
         var text = symbol+" is now $"+data[0].l+" per share.\nThanks for asking, @"+req.swagger.params.user_name.value+"!";
-        request.post({ url:URL, body:{"text":text,"channel":req.swagger.params.channel_name.value}, json:true});
+        request.post({ url:URL, body:{"text":text,"channel":"#"+req.swagger.params.channel_name.value}, json:true});
         res.status(200).type('application/json').end();
     });
 }
