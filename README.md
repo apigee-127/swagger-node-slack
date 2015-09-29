@@ -12,7 +12,10 @@ After downloading the app, do the following:
 2. Execute this command to get the Node.js dependencies:
 
     `npm install`
+    
+3. Execute this command to install `swagger-node` on your system. This step installs `swagger-node` and puts the `swagger` CLI in your path:
 
+    `npm install -g swagger`
 
 ## About the sample swagger-node app
 
@@ -183,7 +186,7 @@ Now, we're going to use the token that Slack issued when we created the Slash co
 
 1. Copy the token from the Slash command UI in Slack. 
 
-2. Open the file `./swagger-node-slack/controllers/reverse.js` in a text editor.
+2. Open the file `./swagger-node-slack/api/controllers/reverse.js` in a text editor.
 
 3. Enter the token string from Slack as the value of `var token`. For example:
 
