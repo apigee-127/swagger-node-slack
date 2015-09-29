@@ -200,7 +200,7 @@ For this example, we'll deploy the app to the [Apigee Edge](http://www.apigee.co
 
 1. Install [apigeetool](https://www.npmjs.com/package/apigeetool). This utility lets you deploy Node.js apps to Apigee Edge. 
 
-    `npm -g apigeetool`
+    `npm install -g apigeetool`
 
 2. Make sure `apigeetool` is in your PATH. Just enter `apigeetool` at the command line. If you see a list of valid commands, you're good to go. 
 
