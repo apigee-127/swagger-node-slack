@@ -293,7 +293,7 @@ A nice thing about projects built with `swagger-node` is that you can build and 
 
 4. In another terminal window, call the API, like this...
 
-    `curl -X POST -H "Content-Type: application/x-www-form-urlencoded" http://localhost:10010/ticker -d "text=AAPL&user_name=Will"`
+    `curl -X POST -H "Content-Type: application/x-www-form-urlencoded" http://localhost:10010/ticker -d "text=AAPL&user_name=marsh"`
 
     ...and you get back a nicely formatted response in your Slack session, like this:
 
