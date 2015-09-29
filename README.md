@@ -128,7 +128,7 @@ You can run the `swagger-node-slack` project locally, and hit the API just to se
 
     `swagger project start`
 
-3. Open the file `./swagger-node-slack/controllers/reverse.js` in a text editor.
+3. Open the file `./swagger-node-slack/api/controllers/reverse.js` in a text editor.
 
 4. Note that the `token` var is set to `secret123`. The API requires a `token` parameter that matches this value, as we'll see. Later, we'll replace this value with a token issued by Slack.
 
